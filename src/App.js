@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Calc from './comp/calc'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <h1> Calculator </h1>
+      <p> SF Assignment-5 by Ajay Yadav</p>
+      
+      <Calc />
+
+      <style jsx>
+        {`
+        h1{
+          padding-top: 1em;
+          font-size: 2.4em;
+        }
+        p{
+          color:#778;
+          padding:0;
+          margin-top:-15px;
+          font-weight: 600;
+        }
+        `}
+      </style>
     </div>
   );
 }
